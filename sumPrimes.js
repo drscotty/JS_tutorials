@@ -1,7 +1,11 @@
-function sumPrimes(num) {
-    return primes(num).reduce((a, b) => a+b);
-}
+//---------------------------------------------------
+// Function to calculate sum of 1D array
+//---------------------------------------------------
+let sum = (arr) => {return arr.reduce((a, b) => a+b)}
 
+//---------------------------------------------------
+// Function to compute array of prime numbers
+//---------------------------------------------------
 function primes(num){
     let primes=[], sieve=[];
 
@@ -17,5 +21,6 @@ function primes(num){
     }
     return primes
 }
-  
-console.log(sumPrimes(10));
+
+// Run the code
+console.log(sum(primes(10)));
